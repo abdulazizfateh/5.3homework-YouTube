@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.3 homework | DOM</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header class="site_header">
+        <nav class="header_nav">
+            <div class="header_nav_left">
+                <button class="header_nav_menu_btn">
+                    <img src="./assets/images/menu.svg" alt="">
+                </button>
+                <a href="index.html">
+                    <div class="header_nav_logo">
+                        <img src="./assets/images/youtube.svg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="header_nav_middle">
+                <form class="header_nav_search_wrapper" action="index.html">
+                    <input class="header_nav_search_input" type="search" placeholder="Search">
+                    <button class="header_nav_search_icon">
+                        <img src="./assets/images/search.svg" alt="">
+                    </button>
+                </form>
+                <button class="header_nav_voice_btn">
+                    <img src="./assets/images/voice.svg" alt="">
+                </button>
+            </div>
+            <div class="header_nav_right">
+                <div class="header_nav_right_action">
+                    <div class="sameplay"></div>
+                    <div class="create_window" id="crr">
+                        <div class="create_window_tab">
+                            <img src="./assets/images/upload.svg" alt="" width="24">
+                            <p>Upload video</p>
+                        </div>
+                        <div class="create_window_tab">
+                            <img src="./assets/images/live.svg" alt="" width="24">
+                            <p>Go live</p>
+                        </div>
+                        <div class="create_window_tab">
+                            <img src="./assets/images/create.svg" alt="" width="24">
+                            <p>Create post</p>
+                        </div>
+                    </div>
+                    <button class="header_nav_create_btn">
+                        <img src="./assets/images/plus.svg" alt="">
+                        <span class="header_nav_create_btn_text">Create</span>
+                    </button>
+                    <button class="header_nav_notification_btn">
+                        <img id="not_image" src="./assets/images/notification.svg" alt="">
+                        <div class="not_window">
+                            <div class="not_top">
+                                <p class="not_top_text">Notifications</p>
+                                <div class="not_top_icon">
+                                    <img src="./assets/images/settings.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="not_content">
+                                <img src="./assets/images/not-window.svg" alt="">
+                                <p class="not_content_title">Your notifications live here</p>
+                                <p class="not_content_text">Subscribe to your favorite channels to get notified about
+                                    their latest videos.</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <button class="header_nav_user">
+                    <img src="./assets/images/user.jpeg" alt="">
+                    <div class="user_window">
+                        <div class="user_window_wrapper">
+                            <div class="user_window_user">
+                                <img src="./assets/images/user.jpeg" alt="">
+                            </div>
+                            <div class="user_window_content">
+                                <p class="user_window_text">Abdulaziz Ergashev</p>
+                                <p class="user_window_username">@abdulazizfateh</p>
+                                <a class="user_window_link" href="#">View your channel</a>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <div class="menu_window">
+        <div class="menu_window_wrapper">
+            <button class="header_nav_menu_btn menu_window_menu_btn">
+                <img src="./assets/images/menu.svg" alt="">
+            </button>
+            <div class="header_nav_logo">
+                <img src="./assets/images/youtube.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="voice_window">
+        <button class="voice_hide_btn">
+            <img src="./assets/images/cancel.svg" alt="" width="24">
+        </button>
+        <p>Listening...</p>
+        <div class="voice_window_voice_wrapper">
+            <img src="./assets/images/voice.svg" alt="" width="40">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="site_main">
+        <section class="section_hero">
+            <div class="container">
+                <div class="hero_wrapper">
+                    <div class="hero_video">
+                        <div class="hero_video_yt_wrapper">
+                            <iframe class="hero_video_yt"
+                                src="https://www.youtube.com/embed/GXnfBYPsAuE?si=a5crhj6L8YQrT9dj"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="hero_video_content">
+                            <h1 class="hero_video_content_title">A Winter Wildlife Wonderland | BBC Earth</h1>
+                            <div class="hero_video_content_wrapper">
+                                <div class="hero_video_content_channel">
+                                    <div class="hero_video_content_channel_image">
+                                        <img src="./assets/images/bbc.jpg" alt="">
+                                    </div>
+                                    <div class="hero_video_content_channel_info">
+                                        <div class="hero_video_content_channel_name_ver">
+                                            <p class="hero_video_content_channel_name">BBC Earth</p>
+                                            <img src="./assets/images/verification.svg" alt="">
+                                        </div>
+                                        <p class="hero_video_content_channel_subs">13.5M subscribers</p>
+                                    </div>
+                                    <button class="hero_video_content_channel_subscribe_btn">Subscribe</button>
+                                </div>
+                            </div>
+                            <div class="hero_video_actions"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
